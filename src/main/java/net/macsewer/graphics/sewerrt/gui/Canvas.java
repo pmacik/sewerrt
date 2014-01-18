@@ -15,34 +15,34 @@ import javax.swing.JPanel;
  * 
  */
 public class Canvas extends JPanel {
-	/**
-	 * ID pro serializaci.
-	 */
-	private static final long serialVersionUID = -7012215337119128070L;
+   /**
+    * ID pro serializaci.
+    */
+   private static final long serialVersionUID = -7012215337119128070L;
 
-	/**
-	 * Vytvoří plátno s daným obrazovým rastrem.
-	 * 
-	 * @param canvas
-	 *            Rastr průmětny.
-	 */
-	public Canvas(BufferedImage canvas) {
-		this.canvas = canvas;
-	}
+   /**
+    * Vytvoří plátno s daným obrazovým rastrem.
+    * 
+    * @param canvas
+    *           Rastr průmětny.
+    */
+   public Canvas(BufferedImage canvas) {
+      this.canvas = canvas;
+   }
 
-	/**
-	 * Rastr průmětny.
-	 */
-	private BufferedImage canvas;
+   /**
+    * Rastr průmětny.
+    */
+   private BufferedImage canvas;
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see javax.swing.JComponent#paint(java.awt.Graphics)
-	 */
-	@Override
-	public void paint(Graphics g) {
-		g.drawImage(canvas, 0, 0, null);
-	}
+   /*
+    * (non-Javadoc)
+    * 
+    * @see javax.swing.JComponent#paint(java.awt.Graphics)
+    */
+   @Override
+   public void paint(Graphics g) {
+      g.drawImage(canvas, 0, 0, null);
+   }
 
 }
